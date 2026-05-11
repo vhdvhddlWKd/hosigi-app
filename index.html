@@ -3,85 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>호식이 앱 다운로드</title>
+  <title>호식이두마리치킨 이벤트</title>
+
+  <!-- 즉시 이벤트 페이지로 이동 -->
+  <meta http-equiv="refresh" content="0; url=https://hosigi.wmpoplus.com/event/3124431" />
 
   <script>
-    // ==============================
-    // 아래 2개 링크만 수정하세요
-    // ==============================
-
-    const IOS_URL = "https://apps.apple.com/kr/app/%ED%98%B8%EC%8B%9D%EC%9D%B4%EB%91%90%EB%A7%88%EB%A6%AC%EC%B9%98%ED%82%A8/id6754001698";
-    const ANDROID_URL = "https://play.google.com/store/apps/details?id=com.wmpoplus.hosigi";
-
-    // ==============================
-    // 기기 자동 분기
-    // ==============================
-
-    const ua = navigator.userAgent || navigator.vendor || window.opera;
-
-    function redirectStore() {
-      if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
-        window.location.replace(IOS_URL);
-      } else if (/android/i.test(ua)) {
-        window.location.replace(ANDROID_URL);
-      } else {
-        // 기타 디바이스는 안드로이드 기준 이동
-        window.location.replace(ANDROID_URL);
-      }
-    }
-
-    window.onload = redirectStore;
+    window.location.href = "https://hosigi.wmpoplus.com/event/3124431";
   </script>
 
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
-      background: #fff7ea;
+      font-family: sans-serif;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
+      background: #ffffff;
+      color: #111111;
       text-align: center;
-      color: #222;
     }
 
     .wrap {
-      padding: 24px;
+      padding: 20px;
     }
 
-    h1 {
-      margin-bottom: 12px;
-      font-size: 28px;
-      font-weight: 800;
-    }
-
-    p {
-      margin: 0;
-      font-size: 16px;
-      line-height: 1.5;
-      color: #555;
-    }
-
-    .small {
-      margin-top: 18px;
-      font-size: 13px;
-      color: #888;
+    a {
+      color: #111111;
+      font-weight: bold;
     }
   </style>
 </head>
+
 <body>
   <div class="wrap">
-    <h1>호식이 앱으로 이동 중입니다</h1>
+    <p>이벤트 페이지로 이동 중입니다.</p>
     <p>
-      사용 중인 기기에 맞는 앱스토어로<br />
-      자동 연결됩니다.
+      이동되지 않을 경우<br />
+      <a href="https://hosigi.wmpoplus.com/event/3124431">
+        여기를 눌러주세요
+      </a>
     </p>
-
-    <div class="small">
-      자동 이동이 되지 않는 경우 새로고침 해주세요.
-    </div>
   </div>
 </body>
 </html>
